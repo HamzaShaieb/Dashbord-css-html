@@ -1,0 +1,241 @@
+/* Start Root variables */
+:root {
+    --main-color:#03a9f5;
+    --second-color:white;
+    --first-font-color:black;
+    --seconde-font-color:#b1b1b3;
+    --main-padding:10px;
+    --backgroundcolor:#f7f7f7;
+    --delivered-color:#8fdf32;
+    --pending-color:#eecb55;
+    --return-color:#ef0909;
+
+
+    --main-tarnsition:
+}
+/* Start Globales Rules */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: poppins ,sans-serif;
+    font-size: 14;
+}
+img {
+    width: 10%;
+}
+a {
+    text-decoration: none;
+    color:var(--seconde-font-color);
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns:  20rem auto  ;
+    background-color: #f7f7f7;
+}
+/* End  Globales Rules */
+/* Start sidebar */
+ .sidebar {
+    background-color:#013147;
+    height: 100vh;
+    
+ }
+ .sidebar .top {
+    margin-top: 1rem;
+    padding-left: 3rem;
+    display: flex;
+    justify-content: space-between;
+   
+ }
+ .sidebar .top img {
+    width: 2rem;
+    height: 2rem;
+ }
+ .sidebar .top h1 {
+    font-weight:600;
+    color: var(--second-color);
+    transform: translate(-70px);
+ }
+    
+
+.sidebar .bottmm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+   
+}
+.sidebar .bottmm a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+    height: 50px;
+    font-size: 1.5rem;
+    color: white;
+}
+.sidebar .bottmm a:hover {
+    background-color: var(--main-color);
+    padding-left: 5rem;
+}
+.sidebar .bottmm a span:last-child{
+    margin-left: 16px;
+}
+
+/* End Sidebar */
+/* Start Main Section */
+.main-section .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem 2rem ;
+    height: 4rem;
+}
+.main-section .top span {
+    cursor: grab;
+}
+.main-section .searchbar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #9b9a96;
+    padding-left: 5px ;
+    padding-top :5px;
+    padding-bottom: 5px;
+    border-radius: 40px;
+    width: 400px;
+    font-size: 2rem
+    ;
+}
+.main-section .top img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+.main-section .data {
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px ;
+    gap: 22px;
+    margin: 22px  22px 0 ;
+   
+}
+.main-section .data .box {
+    background-color: #03a9f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 130px;
+    background-color: white;
+    box-shadow: #03a9f5;
+}
+.main-section .data .box h1 {
+    font-size: 2.5rem;
+}
+.main-section .data .box .info h1 {
+    font-size: 2.5rem;
+}
+.main-section .data .box .info p {
+    font-size: 1rem;
+    padding-right: 30px;
+    color: gray;
+}
+.main-section .data .box span {
+    color: var(--main-color);
+    font-size:3rem ;
+    font-weight: bold;
+}
+.main-section .recent {
+    display: grid;
+    grid-template-columns: auto 40rem;
+    overflow:hidden;
+    padding: 22px;
+    gap: 22px;
+    
+}
+.main-section .recent .tittles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+     
+}
+.main-section .recent .tittles h1{
+    font-size: 1.5rem;
+}
+.main-section .recent .tittles h2{
+    font-size: 1rem;
+    color: white;
+    background-color: var(--main-color);
+    width: 100px;
+    height: 50px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+.main-section .Recent_Orders {
+    background-color:white ;
+    padding: 15px;
+    overflow: scroll;
+    height: 600px;
+}
+.main-section .Recent_Orders table{
+     width: 100%;
+     height: 100%;
+     
+}
+.main-section .recent  table th{
+    text-align: left;
+}
+.main-section .recent  table th:last-child{
+    text-align: right;
+}
+.main-section .recent  table td{
+    margin-left: 0;
+    text-align: left;
+    border-bottom: 1px solid gray;
+     
+ }
+ 
+ .main-section .recent  table td:last-child{
+    text-align:right;
+ }
+ .main-section .recent  table tbody tr:last-child td{
+    border: none;
+ }
+.main-section .recent .recent_customers {
+    background-color: white;
+    padding: 15px;
+}
+.main-section .recent .recent_customers .custumoer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    color:black;
+}
+.main-section .recent .recent_customers .custumoer:hover{
+    color: white;
+    background-color: var(--main-color);
+}
+.main-section .recent .recent_customers .custumoer img {
+    border-radius: 50%;
+}
+.main-section .recent .recent_customers .custumoer .info {
+    margin-left: 20px;
+}
+/* End Main Section *
+/* Start Media Queries */
